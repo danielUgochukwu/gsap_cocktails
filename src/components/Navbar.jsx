@@ -29,9 +29,9 @@ const Navbar = () => {
                 </a>
 
                 <ul>
-                    {navLinks.map((link) => (
-                        <li key={link.id}>
-                           <a href={`#${link.id}`}>{link.title}</a>
+                    {navLinks.map(({ id, title }) => (
+                        <li key={id}>
+                           <a href={`#${id}`}>{title}</a>
                         </li>
                     ))}
                 </ul>
